@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 html{
     margin: 72px auto;
@@ -77,3 +78,18 @@ a , a:hover{
     padding: 10px 25px;
     width: 300px;
 }
+=======
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+>>>>>>> ff7c4b1 (Initialize project using Create React App)

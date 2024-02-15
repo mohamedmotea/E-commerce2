@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-import { RouterProvider ,createBrowserRouter } from 'react-router-dom'
-=======
 import { RouterProvider , createHashRouter } from 'react-router-dom'
->>>>>>> adc6bc5 (e-commerce)
 import Layout from './Component/Layout/Layout';
 import Home from './Component/Home/Home';
 import Cart from './Component/Cart/Cart';
@@ -18,13 +13,8 @@ import ProductDetails from './Component/ProductDetails/ProductDetails';
 import  { Toaster } from 'react-hot-toast';
 import {UserToken} from './Context/Token'
 import { useContext, useEffect } from 'react';
-<<<<<<< HEAD
-import ProtectedRoute from './Component/ProtectedRoute/ProtectedRoute';
-import CartContextProvider, { CartContext } from './Context/Cart';
-=======
 // import ProtectedRoute from './Component/ProtectedRoute/ProtectedRoute';
 import CartContextProvider from './Context/Cart';
->>>>>>> adc6bc5 (e-commerce)
 import ForgotPassword from './Component/ForgotPassword/ForgotPassword';
 import ResetPassword from './Component/ResetPassword/ResetPassword';
 import WishList from './Component/WishList/WishList';
@@ -33,14 +23,7 @@ import CheckOut from './Component/CheckOut/CheckOut';
   
 
 
-<<<<<<< HEAD
-
-
-const router = createBrowserRouter([
-    {path:'',element:<Layout/>,children:[
-=======
 /*  {path:'',element:<Layout/>,children:[
->>>>>>> adc6bc5 (e-commerce)
         {index:true,element:<ProtectedRoute><Home/></ProtectedRoute>},
         {path:'home',element:<ProtectedRoute><Home/></ProtectedRoute>},
         {path:'wishlist',element:<ProtectedRoute><WishList/></ProtectedRoute>},
@@ -55,65 +38,6 @@ const router = createBrowserRouter([
         {path:'resetpassword',element:<ResetPassword/>},
         {path:'checkout',element:<CheckOut/>},
         {path:'*',element:<Notfound/>},
-<<<<<<< HEAD
-    ]}
-])
-
-function App() {
-
-
-
-    let {setToken,setUserName} = useContext(UserToken)
-  
-
-    useEffect(()=>{
-        if(localStorage.getItem('userToken') !== null){
-            setToken(localStorage.getItem('userToken'))
-            setUserName(localStorage.getItem('userName'))
-        }
-      
-    })
-
-
-  return <>
-    <WishProvider>
-  <CartContextProvider>
-
-
-  <RouterProvider router={router}></RouterProvider>
-
-
-  <Toaster />
-  </CartContextProvider>
-  </WishProvider>
-
-
-  </>
-=======
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
->>>>>>> ff7c4b1 (Initialize project using Create React App)
-=======
     ]}*/
 
 const router = createHashRouter([
@@ -165,7 +89,6 @@ function App() {
 
 
   </>
->>>>>>> adc6bc5 (e-commerce)
 }
 
 export default App;

@@ -1,11 +1,11 @@
 
-import React, { useContext, useEffect} from 'react'
-import Style from './Navbar.module.css'
+import { useContext, useEffect} from 'react'
+
 import {Link, useNavigate} from 'react-router-dom'
 import Logo from '../../Assets/Images/freshcart-logo.svg'
 import { UserToken } from '../../Context/Token';
 import { CartContext } from '../../Context/Cart';
-import { useQuery } from 'react-query';
+
 
 export default function Navbar() {
 
